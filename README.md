@@ -13,9 +13,9 @@ Skill de [Claude Code](https://claude.com/claude-code) de SEO **accionable**: co
 | Ruta | Contenido |
 |---|---|
 | `SKILL.md` | Punto de entrada y frameworks principales |
-| `chapters/` | 7 capítulos (técnico, Core Web Vitals, on-page, off-page, clusters, IA generativa, checklist de implementación) |
-| `workflows/` | `auditoria-tecnica-seo.md` y `diagnostico-caida-trafico.md` |
-| `templates/` | Plantillas del informe de auditoría y del diagnóstico de tráfico |
+| `chapters/` | 8 capítulos (técnico, Core Web Vitals, on-page, off-page, clusters, IA generativa, checklist de implementación, audiencia/journey/keywords) |
+| `workflows/` | `auditoria-tecnica-seo.md`, `diagnostico-caida-trafico.md` y `estudio-audiencia-keywords.md` |
+| `templates/` | Informe de auditoría, diagnóstico de tráfico y estudio de audiencia y keywords |
 | `checklists/` | Auditoría rápida y pre-publicación |
 | `cheatsheet.md`, `patterns.md`, `glossary.md` | Referencia rápida, patrones y glosario |
 

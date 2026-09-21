@@ -87,3 +87,23 @@
 **XML sitemap** — lista de URLs que se declara a los buscadores como preferidas (canónicas) para mostrar en resultados (Ch 1)
 
 **YMYL (Your Money or Your Life)** — categoría de temas (salud, finanzas, seguridad) donde Google exige mayor nivel de E-E-A-T por el riesgo de daño real ante información errónea (Ch 4)
+
+## Añadidos — Ch 8
+
+**Searcher persona** — perfil de una persona objetivo (perfil, objetivos, puntos de dolor) orientado a cómo busca; una buyer persona enriquecida con comportamiento de búsqueda. Generada con IA sin datos propios es una hipótesis (Ch 8)
+
+**Customer journey (SEO)** — viaje de una persona desde la primera idea hasta contratar, expresado como búsquedas reales coloreadas por intención informativa → comercial → transaccional (Ch 8)
+
+**Intención informacional / comercial / transaccional / navegacional** — qué quiere lograr quien busca: saber, comparar, contratar/comprar, llegar a una marca concreta. En clase se trabajan las tres primeras (Ch 3, Ch 8)
+
+**Estudio de palabras clave (4 fuentes)** — cliente/director, posicionamiento propio, competencia y nuevas oportunidades (Ch 8)
+
+**Canibalización de keywords** — dos URLs del mismo sitio compitiendo por la misma intención principal (Ch 8)
+
+**SERP** — página de resultados: orgánicos, patrocinados, fragmentos destacados, locales, enriquecidos, "Más preguntas", AI Overview/Modo IA (Ch 8)
+
+**Slug** — parte final de la URL que identifica una página; minúsculas, sin acentos/símbolos, palabras separadas por guiones (Ch 8)
+
+**Meta robots** — etiqueta que controla indexación y visualización en resultados (noindex, nofollow, nosnippet…); solo se lee si la página es rastreable. En clase se describe como "cómo rastrear e indexar" (Ch 8)
+
+**Relaciones públicas digitales (SEO)** — tarea de ganar enlaces/menciones externos hacia páginas estratégicas; en el journey resuelve los nodos "mejores X" y "opiniones" (Ch 4, Ch 8)

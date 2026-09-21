@@ -1,17 +1,18 @@
 ---
 name: seo-digital
-description: "Skill de SEO accionable: conocimiento de fuentes primarias (Google Search Central, web.dev, Moz, Ahrefs, Backlinko, Search Engine Land/Journal, Lighthouse) MÁS workflows que producen entregables reales sobre un sitio concreto — auditoría SEO completa (vía firecrawl-seo-audit + priorización RICE) y diagnóstico de caída de tráfico (proceso de descarte de 6 pasos). Cubre SEO técnico (crawling, indexación, Core Web Vitals, arquitectura), on-page (title tags, encabezados, keyword research, intención), off-page (link building, E-E-A-T, autoridad), estrategia de contenido (topic clusters, mantenimiento), SEO en la era de la IA generativa (AI Overviews, AI Mode, GEO, llms.txt), snippets técnicos listos (robots.txt, sitemap, JSON-LD, meta tags) y checklists de auditoría/pre-publicación. Usa este skill al auditar un dominio real, diagnosticar una caída de tráfico, planificar contenido, evaluar visibilidad en motores de IA, o implementar meta tags/structured data."
+description: "Skill de SEO accionable: conocimiento de fuentes primarias (Google Search Central, web.dev, Moz, Ahrefs, Backlinko, Search Engine Land/Journal, Lighthouse) MÁS workflows que producen entregables reales sobre un sitio concreto — auditoría SEO completa (vía firecrawl-seo-audit + priorización RICE) y diagnóstico de caída de tráfico (proceso de descarte de 6 pasos). Cubre SEO técnico (crawling, indexación, Core Web Vitals, arquitectura), on-page (title tags, encabezados, keyword research, intención), off-page (link building, E-E-A-T, autoridad), estrategia de contenido (topic clusters, mantenimiento), SEO en la era de la IA generativa (AI Overviews, AI Mode, GEO, llms.txt), snippets técnicos listos (robots.txt, sitemap, JSON-LD, meta tags), estudio de audiencia (searcher persona), customer journey y estudio de palabras clave con entregable (workflow + plantilla, método de un curso de posgrado contrastado con fuentes primarias) y checklists de auditoría/pre-publicación. Usa este skill al auditar un dominio real, diagnosticar una caída de tráfico, planificar contenido, evaluar visibilidad en motores de IA, o implementar meta tags/structured data."
 ---
 
 <!-- argument-hint: [topic, framework name, or chapter number] -->
 
 # SEO Digital
-**Fuentes**: Google Search Central, web.dev, Google Search Quality Rater Guidelines, Moz, Ahrefs, Backlinko, HubSpot, Search Engine Land, Search Engine Journal, Semrush, Yoast, Lighthouse (ver notas de fuente por framework en cada capítulo) | **Capítulos**: 7 | **Generado**: 2026-08 (investigación web, sin documento de curso local) | **Ch07 fusionado 2026-08-18** desde la skill `seo` de `web-quality-skills` (instalada vía `autoskills`)
+**Fuentes**: Google Search Central, web.dev, Google Search Quality Rater Guidelines, Moz, Ahrefs, Backlinko, HubSpot, Search Engine Land, Search Engine Journal, Semrush, Yoast, Lighthouse (ver notas de fuente por framework en cada capítulo) | **Capítulos**: 8 | **Generado**: 2026-08 (investigación web, sin documento de curso local) | **Ch07 fusionado 2026-08-18** desde la skill `seo` de `web-quality-skills` (instalada vía `autoskills`) | **Ch08 añadido 2026-09-21** desde un curso de posgrado + verificación web
 
 ## Cómo usar este skill
 
 - **Auditar un sitio real** — pide "audita el SEO de [dominio]"; ejecuto [`workflows/auditoria-tecnica-seo.md`](workflows/auditoria-tecnica-seo.md), que combina `firecrawl-seo-audit` (recolección) con los frameworks de esta skill (interpretación y priorización RICE) y produce un informe real, no una explicación teórica.
 - **Diagnosticar una caída de tráfico** — pide "¿por qué bajó el tráfico de [sitio]?"; ejecuto [`workflows/diagnostico-caida-trafico.md`](workflows/diagnostico-caida-trafico.md), el proceso de descarte de 6 pasos de ch02, sin saltar orden.
+- **Estudio de audiencia y keywords** — pide "haz el estudio de keywords / searcher persona / customer journey de [proyecto]"; ejecuto [`workflows/estudio-audiencia-keywords.md`](workflows/estudio-audiencia-keywords.md) con la plantilla [`templates/estudio-audiencia-keywords.md`](templates/estudio-audiencia-keywords.md): tabla keyword → intención → URL objetivo con evidencias, sin inventar volúmenes.
 - **Sin argumentos** — carga los frameworks core para referencia rápida
 - **Con un tema** — pregunta por `crawling`, `Core Web Vitals`, `keyword research`, `link building`, `topic clusters`, `AI Overviews`; busco y leo el capítulo relevante
 - **Con capítulo** — pide `ch04`; cargo ese capítulo específico
@@ -35,6 +36,8 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 
 **SEO en la era de la IA generativa** (Ch 6): AI Overviews y AI Mode se apoyan en los mismos sistemas de calidad de Google, usando **query fan-out** (subconsultas). GEO tiene 5 principios (fundamentos SEO, claridad de entidad, extraibilidad, presencia más allá del sitio propio, medición distinta). Cuidado con el hype: los datos reales muestran que llms.txt tiene adopción mínima por bots de retrieval de IA (~1% de peticiones) — verifica evidencia antes de priorizar tácticas nuevas.
 
+
+**Audiencia, customer journey y keywords** (Ch 8): el método de clase encadena *searcher persona → customer journey (informativa → comercial → transaccional) → estudio de palabras clave en 4 fuentes*; el entregable es una tabla keyword → intención → URL objetivo con pantallazo de evidencia por decisión. Una intención principal por URL; jamás keyword informacional en una página de servicio; la persona generada con IA es hipótesis hasta validarla. Incluye tabla de contraste clase-vs-fuente primaria (meta robots, noindex y crawl budget, AI Overviews).
 ---
 
 ## Chapter Index
@@ -48,6 +51,7 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 | [ch05](chapters/ch05-topic-clusters-y-estrategia-contenido.md) | Estrategia de contenido: topic clusters y mantenimiento | Pillar + clusters, proceso de construcción de cluster, decisión de mantenimiento de contenido |
 | [ch06](chapters/ch06-seo-ia-generativa.md) | SEO en la era de la búsqueda generativa | AI Overviews/AI Mode, query fan-out, GEO (5 principios), realidad de llms.txt, políticas de contenido con IA |
 | [ch07](chapters/ch07-implementacion-tecnica-checklist.md) | Implementación técnica y checklist rápido | Snippets robots.txt/sitemap/JSON-LD, title/meta/heading, alt text, hreflang, checklist de auditoría crítico→continuo, tabla de herramientas |
+| [ch08](chapters/ch08-audiencia-customer-journey-y-estudio-de-keywords.md) | Audiencia, customer journey y estudio de palabras clave | Searcher persona, journey por intención, 4 fuentes de keywords, asignación keyword↔URL, contraste clase vs fuentes primarias |
 
 ## Topic Index
 
