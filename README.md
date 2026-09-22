@@ -6,7 +6,9 @@ Skill de [Claude Code](https://claude.com/claude-code) de SEO **accionable**: co
 
 - **Auditoría SEO completa** de un dominio: recolección de datos (con `firecrawl-seo-audit`), interpretación con los frameworks de la skill y priorización con **RICE**. Resultado: un informe real.
 - **Diagnóstico de caída de tráfico** con un proceso de descarte de 6 pasos en orden fijo (confirmar → actualización de algoritmo → absorción por SERP features/IA → cambios técnicos → cambios de diseño → content decay).
-- Consulta por temas: crawling e indexación, Core Web Vitals, on-page e intención de búsqueda, link building y E-E-A-T, topic clusters, y SEO para buscadores de IA (AI Overviews, GEO).
+- **Estudio de audiencia y keywords**: searcher persona + customer journey + tabla keyword→URL con evidencias.
+- **Optimización onsite y de contenidos**: metadatos por página + contenido real estructurado a partir de lo que premia la SERP.
+- Consulta por temas: crawling e indexación (incl. PageRank/enlazado interno), Core Web Vitals, on-page e intención de búsqueda, link building y E-E-A-T, topic clusters, y SEO para buscadores de IA (AI Overviews, GEO).
 
 ## Qué incluye
 
@@ -14,8 +16,8 @@ Skill de [Claude Code](https://claude.com/claude-code) de SEO **accionable**: co
 |---|---|
 | `SKILL.md` | Punto de entrada y frameworks principales |
 | `chapters/` | 8 capítulos (técnico, Core Web Vitals, on-page, off-page, clusters, IA generativa, checklist de implementación, audiencia/journey/keywords) |
-| `workflows/` | `auditoria-tecnica-seo.md`, `diagnostico-caida-trafico.md` y `estudio-audiencia-keywords.md` |
-| `templates/` | Informe de auditoría, diagnóstico de tráfico y estudio de audiencia y keywords |
+| `workflows/` | `auditoria-tecnica-seo.md`, `diagnostico-caida-trafico.md`, `estudio-audiencia-keywords.md` y `optimizacion-onsite-contenidos.md` |
+| `templates/` | Informe de auditoría, diagnóstico de tráfico, estudio de audiencia/keywords y optimización onsite/contenidos |
 | `checklists/` | Auditoría rápida y pre-publicación |
 | `cheatsheet.md`, `patterns.md`, `glossary.md` | Referencia rápida, patrones y glosario |
 

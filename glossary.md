@@ -107,3 +107,15 @@
 **Meta robots** — etiqueta que controla indexación y visualización en resultados (noindex, nofollow, nosnippet…); solo se lee si la página es rastreable. En clase se describe como "cómo rastrear e indexar" (Ch 8)
 
 **Relaciones públicas digitales (SEO)** — tarea de ganar enlaces/menciones externos hacia páginas estratégicas; en el journey resuelve los nodos "mejores X" y "opiniones" (Ch 4, Ch 8)
+
+## Añadidos — Ch 1, Ch 5, Ch 7
+
+**PageRank / autoridad interna (link equity)** — modelo original de Google (Page y Brin, 1998): los enlaces son votos de confianza que se reparten entre los enlaces salientes de una página; sigue siendo una de las muchas señales de ranking actuales, no la única (Ch 1)
+
+**Mito del 301** — creencia (enseñada en clase con un diagrama) de que una redirección 301 pierde la mitad de la autoridad al pasar por ella; Google lo desmintió oficialmente en 2016 (Gary Illyes, confirmado por John Mueller): un 301/302 no diluye PageRank (Ch 1)
+
+**Código de respuesta HTTP** — número que devuelve el servidor al pedir una URL: 200 (correcto), 301 (redirección permanente, sin dilución de autoridad), 302 (redirección temporal), 404 (no existe), 500 (error de servidor) (Ch 1)
+
+**Triángulo de metadatos** — title + meta description (lo que se ve en la SERP) y H1 + resto de encabezados (estructura de la página), con el objetivo de la página en el centro; los cuatro deben compartir keyword principal o secundarias (Ch 7)
+
+**Refrito de contenido** — reescribir lo mismo que ya dicen los primeros resultados sin aportar experiencia, dato o ángulo propio (Ch 5)

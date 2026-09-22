@@ -16,6 +16,12 @@ Organizar el contenido como una red de temas relacionados (topic clusters) en ve
   - Cómo: (1) elegir el tema core (candidato a pillar); (2) validar con keyword research (volumen, intención, preguntas relacionadas en "People Also Ask" y en listas de fuentes citadas por AI Overviews — ambas revelan qué subtemas el propio buscador ya agrupa como relacionados); (3) escribir el pillar; (4) construir el contenido de cluster de soporte; (5) conectar todo con enlazado interno siguiendo las tres reglas de arriba. Los dos primeros pasos son de planificación (mapear candidatos); los tres últimos son de ejecución, cluster por cluster.
   - (fuente: HubSpot, blog.hubspot.com/marketing/topic-clusters-seo, 2026-06-17, consultado 2026-08)
 
+- **Estructurar una pieza de contenido a partir de lo que ya premia la SERP [CLASE]**
+  - Cuándo usarlo: ya tienes la keyword (del estudio de audiencia y keywords, Ch 8) pero no sabes qué forma debe tener el contenido.
+  - Cómo, en 4 pasos: (1) busca la keyword en Google y mira los *titles* de los 3-5 primeros resultados — si varios usan un número ("Top 8…", "14 mejores…") es señal de que el formato esperado es un listado; (2) entra en cada resultado y observa cómo trocean la información (resumen corto por punto, bullets de "uso principal"/"ventaja clave", tabla resumen al inicio); (3) identifica recursos reutilizables — tablas, FAQ, bloque de autoría del contenido (E-E-A-T, ver Ch 4) — y decide cuáles aportan a tu pieza; (4) revisa también qué cita el AI Overview/Modo IA para la misma consulta (Ch 6): si ya cubriste los pasos anteriores, suele coincidir.
+  - [EXPERTO] Esto es investigación de **formato**, no plantilla para copiar: fijarte en la estructura que premia Google (listado, tabla, FAQ) no es lo mismo que "refritar" contenido ajeno. Para que el contenido sea realmente propio tiene que aportar algo que no esté ya en la red — experiencia genuina, datos propios, un ángulo que los primeros resultados no cubren.
+  - (fuente: método de un curso de posgrado, 2026-09; contrastado con las guías de contenido útil de Google, ver Ch 6)
+
 - **Decisión de mantenimiento de contenido: actualizar, consolidar, redirigir o podar**
   - Cuándo usarlo: al auditar contenido existente con tráfico en declive (content decay) — antes de reescribir nada, hay que diagnosticar la causa.
   - Cómo: primero distingue **declive gradual sin cambios previos** (decay real: el contenido se quedó quieto, el mundo se movió — la solución es refrescar) de **caída tras un cambio previo en la propia página** (puede que el cambio anterior haya degradado algo que funcionaba — la solución puede ser revertir, no refrescar de nuevo). Aplicar el arreglo equivocado (ej. refrescar una página que en realidad debería consolidarse con otra) desperdicia esfuerzo y puede empeorar el problema.
@@ -30,6 +36,7 @@ Organizar el contenido como una red de temas relacionados (topic clusters) en ve
 - **Content decay**: declive gradual (meses/años) de tráfico y rankings de una página por quedar desactualizada, sin que medie una penalización o bug técnico — se detecta comparando tráfico histórico contra tendencia reciente.
 - **Query fan-out**: técnica que usan AI Overviews y AI Mode de Google para descomponer una búsqueda en múltiples subconsultas relacionadas antes de generar la respuesta (ver Ch 6) — un cluster con cobertura profunda tiene más páginas indexadas elegibles para aparecer citadas en esas subconsultas.
 - **People Also Ask (PAA)**: caja de preguntas relacionadas en la SERP de Google — fuente directa de candidatos a cluster pages, porque revela qué subtemas el propio Google ya asocia con la keyword principal.
+- **Refrito de contenido [CLASE]**: reescribir lo mismo que ya dicen los primeros resultados sin aportar nada propio. Mirar la estructura que premia Google es investigación de formato válida; copiar el contenido sin genuina experiencia o dato propio detrás es refrito, y compite peor frente a contenido con E-E-A-T real.
 
 ## Mental Models
 
@@ -45,6 +52,7 @@ Organizar el contenido como una red de temas relacionados (topic clusters) en ve
 - **Refrescar contenido que en realidad necesita ser revertido**: si la caída de tráfico ocurrió justo después de un cambio de contenido (no como decay gradual sin cambios previos), añadir más contenido nuevo encima sin diagnosticar qué se rompió puede enterrar aún más el problema original.
 - **Tratar cada pieza de contenido como aislada, sin plan de mantenimiento**: publicar y no volver a tocar un artículo durante años, incluso en temas con señal de frescura implícita ("mejores herramientas de X"), garantiza declive estructural frente a competidores que sí refrescan.
 - **Confundir "más páginas" con "más autoridad temática"**: un cluster de 20 páginas delgadas y redundantes no genera la misma autoridad que uno de 6 páginas realmente profundas y bien diferenciadas — la calidad de cada nodo importa tanto como la cantidad de nodos.
+- **Refritar la estructura de la SERP sin aportar nada propio**: copiar el listado/tabla/FAQ de los primeros resultados sin experiencia o dato genuino detrás no compite con contenido que sí lo tiene.
 
 ## Reference Tables
 
@@ -88,3 +96,5 @@ Organizar el contenido como una red de temas relacionados (topic clusters) en ve
 - **Ch 1**: la lógica de silos de arquitectura del Ch 1 y el topic cluster de este capítulo son la misma idea aplicada a nivel de URLs (Ch 1) y a nivel de contenido/enlazado (aquí).
 - **Ch 3**: el keyword research e intención de búsqueda del Ch 3 es el insumo de planificación de este capítulo (pasos 1-2 del proceso de construcción de cluster).
 - **Ch 6**: el query fan-out de AI Overviews premia directamente a los sitios con clusters profundos, porque cada subconsulta generada por la IA tiene más probabilidad de encontrar una página propia elegible entre tus cluster pages.
+- **Ch 7**: la sección on-page de metadatos y encabezados de ch07 es la implementación técnica de cada pieza de contenido estructurada aquí.
+- **Workflow**: [`workflows/optimizacion-onsite-contenidos.md`](../workflows/optimizacion-onsite-contenidos.md) aplica este framework para producir el entregable real (contenido optimizado por página).

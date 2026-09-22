@@ -64,6 +64,8 @@ Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural,
 
 ## On-page: title, meta description, encabezados
 
+**El triángulo de metadatos [CLASE]**: title + meta description (lo que se ve en la SERP) arriba; H1 (encabezado principal) y resto de encabezados (H2-H6, contextuales) abajo; en el centro, el objetivo de la página. Los cuatro deben compartir la keyword principal (title/H1) o keywords secundarias/contextuales (meta description/resto de encabezados) — nunca inventarse cada uno por su lado.
+
 ```html
 <!-- Title: 50-60 caracteres, keyword al principio, marca al final -->
 <title>Blue Widgets for Sale | Premium Quality | Example Store</title>
@@ -71,6 +73,7 @@ Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural,
 <!-- Meta description: 150-160 caracteres, con CTA -->
 <meta name="description" content="Shop premium blue widgets with free shipping. 30-day returns. Rated 4.9/5 by 10,000+ customers.">
 ```
+**[CLASE + VERIFICADO]** Google no fija un límite de caracteres — trunca por ancho en píxeles (~600px), no por cifra exacta. El rango 50-60 (title) / 150-160 (meta description) de arriba es convención práctica del sector, no un dato oficial de Google. El propio material de clase se contradice entre sí (una diapositiva da 60/150, otra 65/155): si preguntan en el examen, anota ambas cifras.
 
 ```html
 <!-- Jerarquía correcta: un solo H1, sin saltar niveles -->
@@ -81,6 +84,8 @@ Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural,
 ```
 (Ver ch03 para cómo elegir la keyword de cada title/H1 según intención de búsqueda.)
 
+**Regla de clase sobre H1 [CLASE]**: nunca 0, nunca 2+ H1 por página; el resto de niveles (H2…H6) se anidan según la keyword principal tenga subtemas. Ejemplo de clase — keyword "tipos de sopas" (H1) → "sopas de pescado" (H2) → "sopa de arroz de pescadores" (H3), y así para cada tipo. **[VERIFICADO]** Google (John Mueller) ha confirmado que usar 1 o 100 H1 no afecta al ranking, mientras tengan sentido para el usuario — la regla de "un solo H1" es buena práctica de accesibilidad y claridad, no una norma de Google. En el examen responde como en clase.
+
 ## Imágenes
 
 ```html
@@ -88,7 +93,7 @@ Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural,
      alt="Blue widget with chrome finish, side view showing control panel"
      width="800" height="600" loading="lazy">
 ```
-Nombre de fichero descriptivo, alt text real (no relleno de keywords), WebP/AVIF, lazy load bajo el fold.
+Nombre de fichero descriptivo, alt text real (no relleno de keywords), WebP/AVIF, lazy load bajo el fold. **[CLASE]** Como referencia de clase, el peso no debería superar ~100kb por imagen. **[VERIFICADO]** Google no publica ese límite en KB en su guía oficial de imágenes — solo pide imágenes ligeras y formatos modernos; trátalo como convención práctica del taller, no como cifra de Google.
 
 ## Enlazado interno
 
@@ -234,3 +239,7 @@ body { font-size: 16px; line-height: 1.5; }
 | Rich Results Test | Validar datos estructurados |
 | Lighthouse | Auditoría SEO completa |
 | Screaming Frog | Análisis de rastreo a fondo |
+
+## Entregable de onsite y contenidos
+
+Para producir el entregable real (hoja de cálculo título/meta/H1 por página + docx de contenido optimizado, método de un curso de posgrado), usa [`workflows/optimizacion-onsite-contenidos.md`](../workflows/optimizacion-onsite-contenidos.md) con la plantilla [`templates/optimizacion-onsite-contenidos.md`](../templates/optimizacion-onsite-contenidos.md).
