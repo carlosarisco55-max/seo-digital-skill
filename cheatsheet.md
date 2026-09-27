@@ -71,3 +71,17 @@ Nunca saltar el orden — el sospechoso obvio rara vez es la causa real.
 
 ## Framework de priorización técnica (adaptado de RICE / revenue-at-risk)
 Puntúa cada fix por: **Alcance** (nº de URLs/sesiones afectadas) × **Impacto** (tráfico o ingreso en riesgo) × **Confianza** (probabilidad de que el fix recupere ese valor) ÷ **Esfuerzo** (horas de implementación). Prioriza por score, no por "severidad" abstracta de una herramienta de auditoría — un problema "crítico" en tráfico irrelevante pesa menos que uno "medio" en una página de alto valor comercial.
+
+## URLs y enlazado externo (Ch 9)
+
+| Tema | Regla de clase | Contraste con Google |
+|---|---|---|
+| Separador en la URL | Guion `-`, nunca `_` | Google recomienda guiones |
+| Mayúsculas | No permitidas | Google trata `/APPLE` y `/apple` como URLs distintas |
+| Ñ, acentos, símbolos | No | Admite no ASCII codificado; evitarlos es criterio de limpieza |
+| Parámetros | URLs estáticas | Google: recorta los que no cambian el contenido |
+| Longitud | (Ch 7: < 75, convención) | Google no da ninguna longitud |
+| HTTPS | Google lo impulsa | Recomendado, pero no factor de ranking fuerte |
+| Importancia de URLs | Home → menú y footer → cuerpo de la Home → sin enlazar | Cada página importante necesita al menos un enlace interno |
+| Medio para enlazar | ≥ 1.200 sesiones/mes · país objetivo · temática afín · contenido nuevo · no publirreportaje · DR > 20 · DA > 24 · ≤ 3 meses sin publicar · sin casinos (> 1 año) | DR/DA no son de Google; publirreportaje con enlace = `sponsored`/`nofollow` |
+

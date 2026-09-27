@@ -105,3 +105,4 @@ Antes de que una página pueda rankear tiene que sobrevivir tres filtros secuenc
 - **Ch 5**: los topic clusters y pillar pages son la aplicación de contenido de la misma lógica de silos y enlazado interno de este capítulo.
 - **Ch 6**: los crawlers de IA (GPTBot, ClaudeBot, PerplexityBot) tienen su propia gestión de robots.txt y acceso, independiente de Googlebot — lo que bloqueas para uno no necesariamente afecta al otro.
 - **Ch 7**: los snippets de códigos de respuesta y el checklist de auditoría técnica aplican directamente el modelo de autoridad interna y canonicalización de este capítulo.
+- **Ch 9**: aplica el modelo de autoridad interna al diseño concreto del sitio: despliegue de URLs, menú, footer y enlaces desde el contenido (y el enlazado externo). En la Clase 3 el diagrama de link juice ya no incluye el paso por una 301 (ver el mito del 301 arriba).

@@ -6,7 +6,7 @@ description: "Skill de SEO accionable: conocimiento de fuentes primarias (Google
 <!-- argument-hint: [topic, framework name, or chapter number] -->
 
 # SEO Digital
-**Fuentes**: Google Search Central, web.dev, Google Search Quality Rater Guidelines, Moz, Ahrefs, Backlinko, HubSpot, Search Engine Land, Search Engine Journal, Semrush, Yoast, Lighthouse (ver notas de fuente por framework en cada capítulo) | **Capítulos**: 8 | **Generado**: 2026-08 (investigación web, sin documento de curso local) | **Ch07 fusionado 2026-08-18** desde la skill `seo` de `web-quality-skills` (instalada vía `autoskills`) | **Ch08 añadido 2026-09-21** desde un curso de posgrado + verificación web | **Ch01, Ch05, Ch07 ampliados 2026-09-22** con contenido de un curso de posgrado (PageRank/enlazado interno, estructura de contenido desde la SERP, triángulo de metadatos), comparado con fuente primaria — no crea Ch09: se hace fold-in sobre lo existente
+**Fuentes**: Google Search Central, web.dev, Google Search Quality Rater Guidelines, Moz, Ahrefs, Backlinko, HubSpot, Search Engine Land, Search Engine Journal, Semrush, Yoast, Lighthouse (ver notas de fuente por framework en cada capítulo) | **Capítulos**: 9 | **Generado**: 2026-08 (investigación web, sin documento de curso local) | **Ch07 fusionado 2026-08-18** desde la skill `seo` de `web-quality-skills` (instalada vía `autoskills`) | **Ch08 añadido 2026-09-21** desde un curso de posgrado + verificación web | **Ch01, Ch05, Ch07 ampliados 2026-09-22** con contenido de un curso de posgrado (PageRank/enlazado interno, estructura de contenido desde la SERP, triángulo de metadatos), comparado con fuente primaria — no crea Ch09: se hace fold-in sobre lo existente | **Ch09 añadido 2026-09-23** desde un curso de posgrado (Clase 3: arquitectura, navegación, enlazado interno y externo), contrastado con Google Search Central; sí es capítulo nuevo porque reúne dos talleres completos
 
 ## Cómo usar este skill
 
@@ -14,6 +14,8 @@ description: "Skill de SEO accionable: conocimiento de fuentes primarias (Google
 - **Diagnosticar una caída de tráfico** — pide "¿por qué bajó el tráfico de [sitio]?"; ejecuto [`workflows/diagnostico-caida-trafico.md`](workflows/diagnostico-caida-trafico.md), el proceso de descarte de 6 pasos de ch02, sin saltar orden.
 - **Estudio de audiencia y keywords** — pide "haz el estudio de keywords / searcher persona / customer journey de [proyecto]"; ejecuto [`workflows/estudio-audiencia-keywords.md`](workflows/estudio-audiencia-keywords.md) con la plantilla [`templates/estudio-audiencia-keywords.md`](templates/estudio-audiencia-keywords.md): tabla keyword → intención → URL objetivo con evidencias, sin inventar volúmenes.
 - **Optimización onsite y de contenidos** — pide "optimiza los metadatos / el contenido de [proyecto]"; ejecuto [`workflows/optimizacion-onsite-contenidos.md`](workflows/optimizacion-onsite-contenidos.md) con la plantilla [`templates/optimizacion-onsite-contenidos.md`](templates/optimizacion-onsite-contenidos.md): title/meta description/H1 por página + contenido real estructurado a partir de lo que premia la SERP, sin refritos.
+- **Arquitectura web y enlazado interno** — pide "diseña la arquitectura / el menú y el enlazado interno de [proyecto]"; ejecuto [`workflows/arquitectura-enlazado-interno.md`](workflows/arquitectura-enlazado-interno.md) con la plantilla [`templates/arquitectura-enlazado-interno.md`](templates/arquitectura-enlazado-interno.md): despliegue de URLs con sintaxis correcta, qué va en menú/footer/contenido, todo justificado con evidencias.
+- **Enlazado externo** — pide "selecciona medios donde conseguir enlaces para [proyecto]"; ejecuto [`workflows/enlazado-externo.md`](workflows/enlazado-externo.md) con la plantilla [`templates/enlazado-externo.md`](templates/enlazado-externo.md): URLs a impulsar, anchor text y 5 medios filtrados por tráfico, temática, frescura y contenido sensible.
 - **Sin argumentos** — carga los frameworks core para referencia rápida
 - **Con un tema** — pregunta por `crawling`, `Core Web Vitals`, `keyword research`, `link building`, `topic clusters`, `AI Overviews`; busco y leo el capítulo relevante
 - **Con capítulo** — pide `ch04`; cargo ese capítulo específico
@@ -39,6 +41,8 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 
 
 **Audiencia, customer journey y keywords** (Ch 8): el método de clase encadena *searcher persona → customer journey (informativa → comercial → transaccional) → estudio de palabras clave en 4 fuentes*; el entregable es una tabla keyword → intención → URL objetivo con pantallazo de evidencia por decisión. Una intención principal por URL; jamás keyword informacional en una página de servicio; la persona generada con IA es hipótesis hasta validarla. Incluye tabla de contraste clase-vs-fuente primaria (meta robots, noindex y crawl budget, AI Overviews).
+
+**Arquitectura, navegación y enlazado** (Ch 9): un servicio clave, una URL; la URL en minúsculas, con guiones, sin acentos ni parámetros (Google recomienda guiones y trata mayúsculas y minúsculas como URLs distintas). Importancia de las URLs: Home → menú y footer → cuerpo de la Home → sin enlazar. Menú = lo más importante del negocio, footer = legales y peso medio, contenido = páginas contextuales; el anchor lleva la keyword, nunca "click aquí". En enlazado externo el medio se filtra por origen y volumen de tráfico, temática, frescura y contenido sensible; **DR/DA no son métricas de Google** y un publirreportaje con enlace debe ir calificado como `sponsored`/`nofollow` o infringe la política de spam.
 ---
 
 ## Chapter Index
@@ -53,13 +57,17 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 | [ch06](chapters/ch06-seo-ia-generativa.md) | SEO en la era de la búsqueda generativa | AI Overviews/AI Mode, query fan-out, GEO (5 principios), realidad de llms.txt, políticas de contenido con IA |
 | [ch07](chapters/ch07-implementacion-tecnica-checklist.md) | Implementación técnica y checklist rápido | Snippets robots.txt/sitemap/JSON-LD, triángulo de metadatos, title/meta/heading (con contraste clase-Google), alt text, hreflang, checklist de auditoría crítico→continuo, tabla de herramientas |
 | [ch08](chapters/ch08-audiencia-customer-journey-y-estudio-de-keywords.md) | Audiencia, customer journey y estudio de palabras clave | Searcher persona, journey por intención, 4 fuentes de keywords, asignación keyword↔URL, contraste clase vs fuentes primarias |
+| [ch09](chapters/ch09-arquitectura-navegacion-y-enlazado.md) | Arquitectura de la información, navegación y enlazado (interno y externo) | Un servicio una URL, sintaxis de URL, importancia de URLs y link juice, menú/footer/contenido, criterios del medio para enlazado externo, entregable mensual, contraste clase vs Google |
 
 ## Topic Index
 
 - **Acciones manuales** → ch02
 - **Algorithm updates** → ch02
-- **Anchor text** → ch04
-- **Arquitectura de sitio (flat/deep/silos)** → ch01, ch05
+- **Anchor text** → ch04, ch09
+- **Arquitectura de sitio (flat/deep/silos)** → ch01, ch05, ch09
+- **Enlazado externo / selección de medios (DR, DA, Similarweb)** → ch09
+- **Menú, footer y enlaces contextuales** → ch09
+- **Sintaxis de URL (protocolo, subdominio, TLD, slug)** → ch09
 - **AI crawlers (GPTBot, ClaudeBot, PerplexityBot)** → ch01, ch06
 - **AI Overviews / AI Mode** → ch02, ch05, ch06
 - **Canonicalización / rel=canonical** → ch01
@@ -70,7 +78,7 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 - **Datos estructurados / rich results / JSON-LD** → ch02, ch07
 - **E-E-A-T** → ch04
 - **Encabezados (H1-H6) / triángulo de metadatos** → ch03, ch07
-- **Enlazado interno** → ch01, ch05, ch07
+- **Enlazado interno** → ch01, ch05, ch07, ch09
 - **GEO (Generative Engine Optimization)** → ch06
 - **hreflang / SEO internacional** → ch02, ch07
 - **Intención de búsqueda** → ch03
@@ -95,7 +103,7 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 - **Spam policies / contenido generado con IA** → ch06
 - **Title tags** → ch03, ch07
 - **Topic clusters / pillar pages** → ch05
-- **URL structure** → ch01, ch07
+- **URL structure** → ch01, ch07, ch09
 - **Herramientas (Search Console, PageSpeed, Screaming Frog...)** → ch07
 
 ## Workflows (accionable — generan un entregable real)
@@ -104,6 +112,8 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 - [workflows/diagnostico-caida-trafico.md](workflows/diagnostico-caida-trafico.md) — proceso de descarte de 6 pasos ante una caída de tráfico orgánico
 - [workflows/estudio-audiencia-keywords.md](workflows/estudio-audiencia-keywords.md) — searcher persona + customer journey + tabla keyword→URL con evidencias
 - [workflows/optimizacion-onsite-contenidos.md](workflows/optimizacion-onsite-contenidos.md) — metadatos por página + contenido real estructurado desde la SERP
+- [workflows/arquitectura-enlazado-interno.md](workflows/arquitectura-enlazado-interno.md) — despliegue de URLs, menú/footer y enlazado interno justificado
+- [workflows/enlazado-externo.md](workflows/enlazado-externo.md) — URLs a impulsar, anchor text y selección de 5 medios
 
 ## Templates (entregables)
 
@@ -111,6 +121,8 @@ Cuando preguntes por un tema no cubierto en Core Frameworks, leeré el capítulo
 - [templates/informe-diagnostico-trafico.md](templates/informe-diagnostico-trafico.md) — estructura del informe de diagnóstico de caída
 - [templates/estudio-audiencia-keywords.md](templates/estudio-audiencia-keywords.md) — estructura del estudio de audiencia y keywords
 - [templates/optimizacion-onsite-contenidos.md](templates/optimizacion-onsite-contenidos.md) — estructura del entregable de metadatos y contenido
+- [templates/arquitectura-enlazado-interno.md](templates/arquitectura-enlazado-interno.md) — estructura del entregable de arquitectura y enlazado interno
+- [templates/enlazado-externo.md](templates/enlazado-externo.md) — estructura del entregable de enlazado externo
 
 ## Checklists
 

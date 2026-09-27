@@ -60,7 +60,7 @@ Recuerda (ch01): robots.txt controla **rastreo**, nunca indexación — para eso
 ❌ https://example.com/p?id=12345
 ❌ https://example.com/products/item/category/subcategory/blue-widget-2024-sale
 ```
-Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural, evitar parámetros, siempre HTTPS.
+Guiones (no guión bajo), minúsculas, cortas (<75 caracteres), keyword natural, evitar parámetros, siempre HTTPS. **[VERIFICADO 2026-09-23]** Google recomienda guiones frente a guiones bajos y trata mayúsculas y minúsculas como URLs distintas; no da ninguna longitud recomendada (el <75 es convención). Sintaxis completa de una URL (protocolo, subdominio, TLD, carpeta de idioma, slug) y contraste con la clase: ver Ch 9.
 
 ## On-page: title, meta description, encabezados
 
@@ -200,6 +200,19 @@ body { font-size: 16px; line-height: 1.5; }
 <html lang="es-ES">
 ```
 
+## Elegir el tipo de dato estructurado correcto (no solo rellenar campos)
+
+Antes de arreglar un aviso de Search Console de datos estructurados, comprueba que el **tipo** de schema encaja con el negocio — no todo negocio online es un `Product`.
+
+- **`Product`/`Offer` con función de "Fichas de comerciantes"** exige campos de venta física: `image`, `shippingDetails`, `hasMerchantReturnPolicy` (envío, devoluciones) y, para "Fragmentos de productos", `review`/`aggregateRating`. Encaja con e-commerce que envía algo. Un SaaS/servicio por suscripción no vende nada que se envíe ni se devuelva — usar `Product` ahí genera avisos que no se pueden resolver bien.
+- **`Service`** (con `provider`, `serviceType`, `areaServed` y `offers` para los planes) es el tipo correcto para un SaaS o negocio de servicios: mismos precios/planes, sin pedir logística que no existe.
+- **Nunca rellenes `review`/`aggregateRating` con datos inventados** para tapar un aviso "no crítico" — es justo lo que las políticas de reseñas de Google prohíben (reseñas fingidas). Dos opciones honestas: cambiar el `@type` (arriba) o dejar el campo vacío hasta tener reseñas reales.
+- **Verificación**: Search Console → Inspección de URLs → pega la URL → si dice "está en Google, pero tiene problemas", revisa el desglose (verás qué campos exactos faltan y si son críticos o no). Tras corregir el código y publicarlo, pide **"Solicitar indexación"** en la misma pantalla — Google relee la página en su próxima visita, que no es inmediata (de minutos a un par de días).
+
+## Encabezados: detectar saltos de nivel con Web Developer
+
+La extensión **Web Developer** (Information → Document Outline) dibuja el árbol H1→H2→...→H6 real de cualquier página. Si el HTML salta un nivel (por ejemplo, un H2 seguido directamente de un H4, sin H3 en medio), la extensión lo marca con un **"[Missing heading]"** en amarillo — esa etiqueta es la señal inequívoca de un salto de jerarquía, no un fallo de la extensión. Corrige subiendo el nivel de las etiquetas saltadas (H4→H3) si no hay hijos H5/H6 que dependan de ellas; si los hay, revisa toda la rama antes de tocar nada.
+
 ## Checklist de auditoría rápida
 
 **Crítico**
@@ -217,7 +230,7 @@ body { font-size: 16px; line-height: 1.5; }
 - [ ] Core Web Vitals en verde (ch02)
 
 **Media prioridad**
-- [ ] Datos estructurados implementados donde aplique
+- [ ] Datos estructurados implementados donde aplique **y con el `@type` correcto para el modelo de negocio** (`Service` para SaaS, no `Product`)
 - [ ] Estrategia de enlazado interno (ch05)
 - [ ] Alt text en imágenes
 - [ ] URLs descriptivas
@@ -234,11 +247,13 @@ body { font-size: 16px; line-height: 1.5; }
 
 | Herramienta | Uso |
 |---|---|
-| Google Search Console | Monitorizar indexación, detectar errores |
+| Google Search Console | Monitorizar indexación, detectar errores, inspeccionar URLs y pedir reindexación |
 | Google PageSpeed Insights | Rendimiento + Core Web Vitals |
 | Rich Results Test | Validar datos estructurados |
 | Lighthouse | Auditoría SEO completa |
-| Screaming Frog | Análisis de rastreo a fondo |
+| Screaming Frog | Análisis de rastreo a fondo: Response Codes (enlaces rotos), Titles/Meta/H1 (duplicados o vacíos) |
+| Web Developer (extensión Chrome) | Information → Document Outline: ver la jerarquía de encabezados real y detectar saltos de nivel |
+| Similarweb | Estimación de tráfico y país de origen de un dominio de terceros (enlazado externo, ch09) |
 
 ## Entregable de onsite y contenidos
 
